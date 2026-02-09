@@ -12,5 +12,5 @@
   #String to list
   - name: convert string to list
     ansible.builtin.debug:
-      msg: "skills are: {{ skills | spilt(',') }}"
+      msg: "Skills are: {{ skills | spilt(',') }}"
   
