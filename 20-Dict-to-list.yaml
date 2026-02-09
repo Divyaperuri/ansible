@@ -5,6 +5,7 @@
     technologies: Devops, Linux, Python, Ansible # String
     #dictionary == map
     name: divya peruri
+    gmail: DivyaPeruriSai@Gmail.com
     tags: 
       Application: payment
       Environment: dev
@@ -49,3 +50,7 @@
   - name: convert uppercase
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+  - name: convert lowercase
+    ansible.builtin.debug:
+      msg: "{{ name | lower }}"
