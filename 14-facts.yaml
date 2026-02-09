@@ -6,8 +6,8 @@
     ansible.builtin.dnf:
       name: nginx
       state: latest
-    when: ansible_os_family == "Redhat" # use amsible while refering the facts
-    
+    when: ansible_os_family == "RedHat" #use amsible while refering the facts
+
   - name: install nginx if ubuntu
     ansible.builtin.apt:
       name: nginx
