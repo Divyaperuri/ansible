@@ -10,7 +10,7 @@
     - ansible
     - shell Scripting
     -  terraform
-    concepst: # Dictionary or Map which have key and value
+    concepts: # Dictionary or Map which have key and value
       topic:  aWS
       cm: aws-command-line
   tasks:
