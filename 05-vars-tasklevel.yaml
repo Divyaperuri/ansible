@@ -12,4 +12,6 @@
     ansible.builtin.debug:
       #In ansible , variable referred by {{}}- Double flower braces with variable name
       #These are task level variables because we are giving the variables in tasks
+      #Here we are giving same variable with diff value i.e Override
+      #Preferrence should be task level rather than play level
       msg: "Course name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"

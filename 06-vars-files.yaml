@@ -1,0 +1,11 @@
+- name: vars from files
+  hosts: local
+  connection: local #Ansible server is connecting to localhost
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: print the course info
+    ansible.builtin.debug:
+      #In ansible , variable referred by {{}}- Double flower braces with variable name
+      #variables are reffering from file 
+      msg: "Course name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
