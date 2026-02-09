@@ -16,3 +16,4 @@
     ansible.builtin.debug:
       #In ansible , variable referred by {{}}- Double flower braces with variable name
       #These are play level variables because we are giving in playbook at top
+      msg: "Name: {{ NAME }}"
