@@ -54,3 +54,6 @@
   - name: convert lowercase
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
+
+  - name: check ip is variabled
+    ansible.builtin.debug: "{{ ipaddress | ansible.utils.ipv4 }}"
