@@ -1,0 +1,45 @@
+<!--Extension Markup Language-->
+<!--List of Student Objects-->
+<Students>
+    <Student>
+        <Name>Divya Peruri</Name>
+        <DOB>25-07-2000</DOB>
+        <Age>25</Age>
+        <Addresses><!--List of Objects-->
+            <!--Object-->
+            <Address type="Permanent">
+                <DoorNo>5-121</DoorNo>
+                <Street>Rohan Nagar</Street>
+            </Address>
+            <Addresses type="Current">
+                <DoorNo>5-123</DoorNo>
+                <Street>Subha Nagar</Street>
+        </Addresses>
+        <Skills><!--List of strings-->
+            <Skill>Docker</Skill>
+            <Skill>ShellScripting</Skill>
+            <Skill?>Ansible</Skill>
+        </Skillls>
+    </Student>
+
+    <Student>
+        <Name>Rahul Peruri</Name>
+        <DOB>25-07-2002</DOB>
+        <Age>23</Age>
+        <Addresses><!--List of Objects-->
+            <!--Object-->
+            <Address type="Permanent">
+                <DoorNo>5-121</DoorNo>
+                <Street>Rohan Nagar</Street>
+            </Address>
+            <Addresses type="Current">
+                <DoorNo>5-123</DoorNo>
+                <Street>Subha Nagar</Street>
+        </Addresses>
+        <Skills><!--List of strings-->
+            <Skill>Microsoft365</Skill>
+            <Skill>ShellScripting</Skill>
+            <Skill>Linux</Skill>
+        </Skillls>
+    </Student>
+</Students>

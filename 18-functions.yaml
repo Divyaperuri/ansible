@@ -1,0 +1,5 @@
+- name: functions
+  host: local
+  connection: local
+  tasks:
+  

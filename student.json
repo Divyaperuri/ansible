@@ -1,0 +1,21 @@
+{
+    "name": "Divya Peruri",
+    "dob": "01-02-2000",
+    "addresses": [
+        {
+            "type": "current",
+            "doorno": "3-23",
+            "street": "rohan nagar",
+            "city": "hyd",
+            "pincode": 50034
+        },
+        {
+            "type": "current",
+            "doorno": "3-23",
+            "street": "rohan nagar",
+            "city": "hyd",
+            "pincode": 50043
+        }
+    ],
+    "skills": ["java", "devops", "ansible"]
+}

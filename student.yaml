@@ -1,0 +1,41 @@
+- name: "Divya Peruri"
+  dob: "3-12"
+  age: "23"
+  addresses: 
+  #Object
+  - doorno: 3-232
+    street: "subha nagar"
+    city: "ap"
+    pincode: 534123
+    type: current
+
+  - doorno: 3-232
+    street: "subha nagar"
+    city: "ap"
+    pincode: 534123
+    type: Perm
+  skills:
+  - Java
+  - devops
+  - ansible
+
+- name: "Rahul Peruri"
+  dob: "3-12"
+  age: "23"
+  addresses: 
+  #Object
+  - doorno: 3-232
+    street: "subha nagar"
+    city: "ap"
+    pincode: 534123
+    type: current
+
+  - doorno: 3-232
+    street: "subha nagar"
+    city: "ap"
+    pincode: 534123
+    type: Perm
+  skills:
+  - Java
+  - devops
+  - ansible
