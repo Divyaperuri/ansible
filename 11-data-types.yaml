@@ -5,7 +5,7 @@
     Course: "Devops with azure" #string
     Duration: 150 #number
     is_live: true #boolean
-    tools: ["Linux", "shell", "ansible", "terraform" ] #List
+    tools: #["Linux", "shell", "ansible", "terraform" ] #List
     - "Linux"
     - "Ansible"
     - "Shell Scripting"
