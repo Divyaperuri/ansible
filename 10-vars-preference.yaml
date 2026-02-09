@@ -3,8 +3,8 @@
   connection: local #Ansible server is connecting to localhost
   vars:
    NAME: Variable from play level
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: NAME
     prompt: What is your NAME?
