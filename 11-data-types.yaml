@@ -2,17 +2,18 @@
   hosts: local
   connection: local
   vars:
-    Course: Devops with azure #string
+    Course: "Devops with azure" #string
     Duration: 150 #number
     is_live: true #boolean
     tools: #["Linux", "shell", "ansible", "terraform" ] #List
-    - Linux
-    - Ansible
-    - Shell Scripting
-    - Terraform
+    - linux
+    - ansible
+    - shell Scripting
+    -  terraform
     concepst: # Dictionary or Map which have key and value
-      topic: AWS
-      cm: Aws-Command-line
+      topic:  aWS
+      cm: aws-command-line
+  
   tasks:
   - name: print course info
     ansible.builtin.debug:
