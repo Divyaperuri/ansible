@@ -1,0 +1,19 @@
+- name: variables preference
+  hosts: local
+  connection: local #Ansible server is connecting to localhost
+  vars:
+   NAME: Variable from play level
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: What is your NAME?
+    private: false
+  tasks:
+  - name: test the variables preference
+    vars:
+      NAME: Variable from task level
+    ansible.builtin.debug:
+      #In ansible , variable referred by {{}}- Double flower braces with variable name
+      #These are play level variables because we are giving in playbook at top
+      msg: "Course name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
