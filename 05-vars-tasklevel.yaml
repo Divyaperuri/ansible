@@ -1,4 +1,4 @@
-- name: play level variables
+- name: task level variables
   hosts: local
   connection: local #Ansible server is connecting to localhost
   vars:
@@ -7,7 +7,9 @@
     Trainer: Sivakumar
   tasks:
   - name: print the course info
+    vars:
+      COURSE: Ansible
     ansible.builtin.debug:
       #In ansible , variable referred by {{}}- Double flower braces with variable name
-      #These are play level variables because we are giving in playbook at top
+      #These are task level variables because we are giving the variables in tasks
       msg: "Course name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
