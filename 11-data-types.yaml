@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    Course: "Devops with azure" #string
+    Course: Devops with azure #string
     Duration: 150 #number
     is_live: true #boolean
     tools: #["Linux", "shell", "ansible", "terraform" ] #List
