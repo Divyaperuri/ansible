@@ -1,0 +1,9 @@
+- name: Argument level variables #Giving values from command line
+  hosts: local
+  connection: local #Ansible server is connecting to localhost
+  tasks:
+  - name: print the course info
+    ansible.builtin.debug:
+      #In ansible , variable referred by {{}}- Double flower braces with variable name
+      #This is args level variables because we are giving the values in command line
+      msg: "Course name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
