@@ -11,9 +11,12 @@
     private: false
   tasks:
   - name: test the variables preference
-    vars:
-      NAME: Variable from task level
+    # vars:
+    #   NAME: Variable from task level
     ansible.builtin.debug:
       #In ansible , variable referred by {{}}- Double flower braces with variable name
       #These are play level variables because we are giving in playbook at top
       msg: "Name: {{ NAME }}"
+
+# 1. First preference of variabled from Arguments or Command line
+# 2. From Task level
