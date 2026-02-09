@@ -13,7 +13,7 @@
     concepst: # Dictionary or Map which have key and value
       topic: AWS
       cm: Aws-Command-line
-    tasks:
-    - name: print course info
-      ansible.builtin.debug:
-        msg: "Course name: {{ Course }}, Duration was: {{ Duration }}, is it live or not: {{ is_live }}, tools included: {{ tools }}, concepts are: {{ concepts }}"
+  tasks:
+  - name: print course info
+    ansible.builtin.debug:
+      msg: "Course name: {{ Course }}, Duration was: {{ Duration }}, is it live or not: {{ is_live }}, tools included: {{ tools }}, concepts are: {{ concepts }}"
