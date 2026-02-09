@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    skills: Devops, Linux, Python, Ansible # String
+    technologies: Devops, Linux, Python, Ansible # String
 
   tasks:
   - name: default variable
@@ -12,5 +12,5 @@
   #String to list
   - name: convert string to list
     ansible.builtin.debug:
-      msg: "Skills are: {{ skills | spilt(',') }}"
+      msg: "Skills are: {{ technologies | spilt(',') }}"
   
